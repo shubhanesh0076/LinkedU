@@ -13,6 +13,15 @@ Navigate to the project directory and create a .env file where manage.py exists.
       - nano .env
   - Add or update the POSTGRES_HOST variable with your system’s IP address:
       - POSTGRES_HOST=your_system_ip
+  - Env file data:
+        SECRET_KEY='django-insecure-e*afj61p%idr$kwqnnm#41p__$abbez1%=_-9%ta5$r2848pe$'
+        DEBUG=True
+        POSTGRES_ENGINE='django.db.backends.postgresql'  
+        POSTGRES_DB='linkedu'  
+        POSTGRES_USER='linkedu'  
+        POSTGRES_PASSWORD='linkedu@123'  
+        POSTGRES_HOST='your_system_ip'
+        POSTGRES_PORT=5432
 
 
 ## Step 3: Start and Stop the Project
@@ -29,6 +38,8 @@ Run the following command to stop the Docker Compose services:
 
 **Note**: Ensure that the setup.sh script is executable. You can make it executable with the following command:
 chmod +x setup.sh
+
+### I have attached the project's API Postman collection to this document, which includes all the endpoints, request methods, and sample data needed for testing and development.
 
 
 
