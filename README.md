@@ -1,12 +1,34 @@
 # LinkedU
-# Project Setup Guide.
-## step-1 Take a Clone of project:
+# Project Setup Guie.
+## step-1 Step 1: Clone the Project Repository
+Clone the project repository to your local machine using the following command::
 Example: git clone "repo url"
 
-## step-2 
-put .env file where the manage.py file exists and inside the .env file there is a POSTGRES_HOST variable. Assign the own system Ip to that variable.
 
-## step-3
-Now execute the command for project start : ` ./setup.sh start` , Where setup.sh exists.
-Execute the command for project stop : ` ./setup.sh stop` , Where setup.sh exists.
+## Step 2: Configure the Environment
+Navigate to the project directory and create a .env file where manage.py exists. Update the .env file with your system’s IP address for the POSTGRES_HOST variable. Here’s an example of how to set it:
+  - Navigate to the project directory:
+      - cd LinkedU
+  - Create and edit the .env file: 
+      - nano .env
+  - Add or update the POSTGRES_HOST variable with your system’s IP address:
+      - POSTGRES_HOST=your_system_ip
+
+
+## Step 3: Start and Stop the Project
+The project includes a setup.sh script to simplify starting and stopping the Docker Compose services. Execute the following commands from the project directory:
+
+To Start the Project
+Run the following command to start the Docker Compose services:
+
+- ./setup.sh start
+
+To Stop the Project
+Run the following command to stop the Docker Compose services:
+- ./setup.sh stop
+
+**Note**: Ensure that the setup.sh script is executable. You can make it executable with the following command:
+chmod +x setup.sh
+
+
 
